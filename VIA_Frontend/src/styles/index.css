@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@theme {
+  --color-primary: #2563eb;
+}
+
+@keyframes zigzagColor {
+  0%   { color: #9333EA; }
+  20%  { color: #2563EB; }
+  40%  { color: #16A34A; }
+  60%  { color: #F97316; }
+  80%  { color: #DC2626; }
+  100% { color: #9333EA; }
+}
+
+.zigzagColor {
+  animation: zigzagColor 3s infinite linear;
+}
+
+@keyframes zigzagGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  75% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.zigzagText {
+  background: linear-gradient(
+    135deg,
+    #9333EA,
+    #2563EB,
+    #16A34A,
+    #F97316,
+    #DC2626
+  );
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: zigzagGradient 10s ease-in-out infinite;
+}
+
+
+/* Hide scrollbar but keep scrolling */
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
