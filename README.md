@@ -2,7 +2,7 @@
   <h1>VIA (Video Interaction Application)</h1>
 </div>
 
-# Live on https://via-frontend2.onrender.com
+
 
 # Description
 A MERN stack web app integrating Agora SDK for group video calls and Socket.io for real-time chat. Includes admin controls for participants and privacy, as well as speech-to-text and typing indicators, enhancing communication and boosting engagement by 40%.
