@@ -30,7 +30,7 @@ export default function Navbar({ sidebarOpen, setSidebarOpen }) {
         <button
           className="bg-black px-4 py-2 rounded-lg hover:bg-gray-800 transition"
           onClick={() =>
-            window.open("https://github.com/Gitvikashyadav/VIA", "_blank")
+            window.open("https://github.com/sudeepkumarmandal/VIA-Chat", "_blank")
           }
         >
           GitHub
