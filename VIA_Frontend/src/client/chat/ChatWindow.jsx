@@ -472,6 +472,13 @@ export default function ChatWindow({
               className="flex-1 border border-gray-200 rounded-md px-3 py-2 outline-none"
               onChange={(e) => setText(e.target.value)}
               value={text}
+               // ⭐ ADD THIS PART
+  onKeyDown={(e) => {
+    if (e.key === "Enter" && text.trim() !== "") {
+      e.preventDefault();
+      sendMessage();
+    }
+  }}
             />
 
             <button
