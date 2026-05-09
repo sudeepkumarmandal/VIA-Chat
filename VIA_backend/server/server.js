@@ -29,7 +29,7 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://via-frontend2.onrender.com"
+    "https://via-chat-frontend.onrender.com"
   ],
   methods: ["GET","POST","PUT","DELETE"],
   credentials: true
@@ -47,7 +47,7 @@ const { Server } = require("socket.io");
 // create socket server
 const io = new Server(server, {
   cors: {
-    origin: ["https://via-frontend2.onrender.com","http://localhost:5173"]
+    origin: ["https://via-chat-frontend.onrender.com","http://localhost:5173"]
   },
 });
 
